@@ -1,0 +1,10 @@
+{
+    "name": "truco",
+    "version": "0.1",
+    "description": "truco dos crias",
+    "type": "module",
+    "dependencies": {
+        "express": "^4.21.2",
+        "socket.io": "^4.8.1"
+    }
+}
