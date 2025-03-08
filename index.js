@@ -18,7 +18,12 @@ app.get('/', (req, res) => {
 })
 
 io.on ('connection', (socket) => {
-    console.log ('login realizado com sucesso' + socket.id )
+    console.log ('login realizado sucesso' + socket.id )
+
+    socket.on ("chat message", (text) =>{
+         console.log ("recebeu mensagem: " + text)
+         io.emit ("chat message", text)
+    })
 
 })
 
